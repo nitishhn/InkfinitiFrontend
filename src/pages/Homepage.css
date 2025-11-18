@@ -1,0 +1,73 @@
+/* Gender Slider Styles */
+.gender-slider-container {
+    padding: 2rem 0;
+    background-color: #f8fafc;
+  }
+  
+  .gender-slider {
+    max-width: 300px;
+    margin: 0 auto;
+    display: flex;
+    position: relative;
+    background-color: #e2e8f0;
+    border-radius: 9999px;
+    padding: 4px;
+  }
+  
+  .gender-btn {
+    flex: 1;
+    padding: 0.75rem 1rem;
+    font-weight: 600;
+    color: #64748b;
+    border: none;
+    background: transparent;
+    cursor: pointer;
+    position: relative;
+    z-index: 1;
+    transition: color 0.3s ease;
+  }
+  
+  .gender-btn.active {
+    color: white;
+  }
+  
+  .slider-track {
+    position: absolute;
+    top: 4px;
+    left: 4px;
+    height: calc(100% - 8px);
+    width: calc(50% - 8px);
+    background-color: #7c3aed;
+    border-radius: 9999px;
+    transition: transform 0.3s ease;
+  }
+  
+  .slider-track.men {
+    transform: translateX(0);
+  }
+  
+  .slider-track.women {
+    transform: translateX(100%);
+  }
+  
+  /* Design Card Styles */
+  .design-card {
+    position: relative;
+    transition: transform 0.3s ease;
+  }
+  
+  .design-card:hover {
+    transform: translateY(-8px);
+  }
+  
+  .btn-primary {
+    background-color: #7c3aed;
+    color: white;
+    transition: all 0.3s ease;
+  }
+  
+  .btn-primary:hover {
+    background-color: #8b5cf6;
+    transform: translateY(-2px);
+  }
+  
